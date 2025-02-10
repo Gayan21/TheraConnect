@@ -1,0 +1,356 @@
+/* Modal background */
+.modal,
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.modal-content,
+.payment-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+/* Modal title */
+.modal-title,
+.payment-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1d4ed8;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label style */
+.label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 12px; /* Adjusted for more space between label and input */
+}
+
+/* Input container for date input */
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px; /* Adjusted padding for better spacing */
+}
+
+/* Icon style */
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #888;
+  margin-right: 10px;
+}
+
+/* Date input style */
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+/* Time slot button grid */
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Time slot button style */
+.time-slot {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.time-slot:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.cancel-button,
+.continue-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.cancel-button {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.cancel-button:hover {
+  background-color: #e0e0e0;
+}
+
+.continue-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.continue-button:hover {
+  background-color: #0056b3;
+}
+
+/* Session details section */
+.session-details {
+  margin-bottom: 20px;
+}
+
+.session-details-title {
+  font-size: 1.2rem;
+  font-weight: medium;
+  margin-bottom: 10px;
+}
+
+.session-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.session-info-text {
+  margin-bottom: 10px;
+}
+
+.session-info-amount {
+  font-weight: bold;
+}
+
+/* TheraConnect container */
+.thera-connect-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 32px;
+  z-index: 1;
+}
+
+/* Main content area */
+.thera-connect-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: 32px;
+  z-index: 10;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 8px;
+}
+
+.subheading {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+/* Search container */
+.search-container {
+  margin-bottom: 32px;
+  z-index: 10;
+}
+
+.search-input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #9ca3af;
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+}
+
+/* Therapist grid */
+.therapist-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .therapist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .therapist-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Therapist card */
+.therapist-card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.therapist-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Therapist image */
+.therapist-image {
+  height: 100px;
+  object-fit: cover;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+}
+
+/* Therapist specialty */
+.therapist-specialty {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+/* Therapist bio */
+.therapist-bio {
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+/* Availability and rate section */
+.availability-rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-icon {
+  width: 16px;
+  height: 16px;
+  color: #9ca3af;
+  margin-right: 8px;
+}
+
+.rate {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Book session button */
+.book-session-button {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-session-button:hover {
+  background-color: #2563eb;
+}
+
+/* Success message styles */
+.payment-success {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.check-icon-container {
+  width: 60px;
+  height: 60px;
+  background-color: #d4f7db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.check-icon {
+  width: 30px;
+  height: 30px;
+  color: #28a745;
+}
+
+.payment-success-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.payment-success-message {
+  font-size: 1rem;
+  color: #555;
+}
+
+.session-link {
+  font-size: 0.875rem;
+  color: #777;
+}

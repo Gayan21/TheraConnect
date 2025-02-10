@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# TheraConnect - Therapy Marketplace Platform Prototype
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A rapid prototype of a marketplace platform connecting therapists with clients, featuring video sessions and payment processing.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Therapist Profiles:** Browse detailed therapist profiles with specialties, bios, and availability
+- **Search Functionality:** Find therapists by name or specialty
+- **Booking System:** Select available time slots and schedule sessions
+- **Video Sessions:** Simulated video session links for remote therapy
+- **Payment Processing:** Mock payment flow with success confirmation
 
-### `npm start`
+## Technical Implementation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Architecture
+- Built using React with modern hooks
+- Styled  CSS
+- Simulated backend with mock data
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### AI Tools Used
+1. **UI Generation:** Leveraged AI to generate the component structure and styling(https://jitsi.org/api/)
+2. **Mock Data:** Generated realistic therapist profiles and availability data
+3. **Payment Flow:** Created a simulated payment processing system
 
-### `npm test`
+### Key Components
+1. `TheraConnect.js` - Main application component with therapist listing
+2. `BookingModal.js` - Session scheduling interface
+3. `PaymentModal.js` - Payment processing interface
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Assumptions & Shortcuts
 
-### `npm run build`
+1. **Data Storage:** Using static mock data instead of a backend database
+2. **Authentication:** Not implemented in this prototype
+3. **Video Integration:** Simulated with mock session links
+4. **Payment Processing:** Mocked payment flow without actual payment gateway
+5. **Availability:** Simple availability system without real-time updates
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Enhancements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Backend Integration:** Add real database and API endpoints
+2. **Authentication:** Implement user accounts and login
+3. **Real Video Integration:** Integrate actual video conferencing API
+4. **Payment Gateway:** Add real payment processing
+5. **Advanced Search:** Add filters for price, availability, and insurance
+6. **Reviews System:** Add ability for clients to leave reviews
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup & Running
 
-### `npm run eject`
+1. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Run the development server:
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application will be available at `http://localhost:3000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- Lucide Icons
