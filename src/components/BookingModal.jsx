@@ -5,7 +5,6 @@ const BookingModal = ({ therapist, onClose, onConfirm }) => {
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
 
-  // Mock available time slots
   const timeSlots = [
     '9:00 AM', '10:00 AM', '11:00 AM',
     '2:00 PM', '3:00 PM', '4:00 PM'
@@ -13,7 +12,6 @@ const BookingModal = ({ therapist, onClose, onConfirm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Generate mock video session link
     const sessionLink = `https://theraconnect.video/${Math.random().toString(36).substr(2, 9)}`;
     onConfirm({
       therapist,

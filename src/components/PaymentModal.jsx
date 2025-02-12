@@ -5,7 +5,6 @@ const PaymentModal = ({ sessionDetails, onClose, onConfirm }) => {
   const [processing, setProcessing] = useState(false);
   const [complete, setComplete] = useState(false);
 
-  // Function to generate a mock video session link
   const generateSessionLink = () => {
     return `https://meet.jit.si/TheraConnect-${Math.random().toString(36).substr(2, 9)}`;
   };
@@ -26,7 +25,7 @@ const PaymentModal = ({ sessionDetails, onClose, onConfirm }) => {
         ...sessionDetails,
         paymentId: Math.random().toString(36).substr(2, 9),
         status: 'confirmed',
-        sessionLink: generateSessionLink(), // Add session link
+        sessionLink: generateSessionLink(), 
       });
     }, 1500);
   };

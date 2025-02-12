@@ -17,10 +17,9 @@ const TherapistRegistration = ({ onSave }) => {
       rate: parseFloat(rate),
       availability: availability.split(',').map(day => day.trim()),
       rating: 5,  
-      imageUrl: '/images/default.png', // Default image
+      imageUrl: '/images/profile.png', 
     };
 
-    // Call the onSave function passed from parent component (TheraConnect)
     onSave(newTherapist);
   };
 

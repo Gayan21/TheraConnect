@@ -69,7 +69,7 @@ const TheraConnect = () => {
       ...prevTherapists,
       { ...newTherapistData, id: prevTherapists.length + 1 }
     ]);
-    setShowRegistration(false); // Close registration form
+    setShowRegistration(false); 
   };
 
   return (
@@ -80,10 +80,9 @@ const TheraConnect = () => {
         <button onClick={() => setShowRegistration(true)}>Become a Therapist</button>
       </header>
 
-      {/* Display Registration Form */}
+     
       {showRegistration && <TherapistRegistration onSave={saveTherapistProfile} />}
 
-      {/* Therapist Search & Display */}
       <div className="search-container">
         <input
           type="text"
@@ -114,7 +113,7 @@ const TheraConnect = () => {
               <button
                 onClick={() => {
                   setSelectedTherapist(therapist);
-                  setShowBooking(true); // Open booking modal
+                  setShowBooking(true); 
                 }}
                 className="book-session-button"
               >
@@ -125,7 +124,6 @@ const TheraConnect = () => {
         ))}
       </div>
 
-      {/* Conditional rendering of BookingModal */}
       {showBooking && selectedTherapist && (
         <BookingModal
           therapist={selectedTherapist}
@@ -133,8 +131,6 @@ const TheraConnect = () => {
           onConfirm={handleBookingConfirm}
         />
       )}
-
-      {/* Conditional rendering of PaymentModal */}
       {showPayment && sessionDetails && (
         <PaymentModal
           sessionDetails={sessionDetails}
