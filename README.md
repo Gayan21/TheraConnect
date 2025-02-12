@@ -62,3 +62,22 @@ The application will be available at `http://localhost:3000`
 
 - React
 - Lucide Icons
+
+### UI
+
+
+- main page
+  ![image](https://github.com/user-attachments/assets/b7ca0273-f553-40fd-8592-f6013b8081da)
+- form page
+   ![image](https://github.com/user-attachments/assets/a1135d7d-c6df-4f89-9244-de2f47bb3e40)
+- BookSession
+   ![image](https://github.com/user-attachments/assets/f3713714-f2d6-40f6-a16a-462371f64f59)
+-  payment modal
+  ![image](https://github.com/user-attachments/assets/d7a02098-1ee5-4ad3-8e20-b90cd237e090)
+- session
+  ![image](https://github.com/user-attachments/assets/88125bad-deb5-4ff4-9011-59c43c50afb5)
+
+
+  
+
+  
